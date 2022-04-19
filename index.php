@@ -40,8 +40,8 @@ if ($_POST) {
         ));
 
         // Build and send the email
-        $headers = 'From: ' . $config['emaily-from'];
-        $headers .= "\r\nBcc: " . $config['emaily-bcc'] . "\r\n\r\n";
+        $headers = 'From: ' . $config['email-from'];
+        $headers .= "\r\nBcc: " . $config['email-bcc'] . "\r\n\r\n";
 
         // Find and replace values
         $find    = array('%name%', '%amount%');
